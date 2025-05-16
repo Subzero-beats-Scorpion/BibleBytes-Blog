@@ -1,0 +1,9 @@
+/* Navbar hover effect */
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #0d6efd !important;
+}

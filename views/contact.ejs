@@ -1,0 +1,50 @@
+<h1>Contact Me</h1>
+<p class="lead mt-3">
+  I would love to hear from you! Whether you have questions, suggestions, or
+  just want to share your thoughts, don't hesitate to get in touch.
+</p>
+
+<hr class="border-secondary my-4" />
+
+<h3 class="mt-4">Send me a message</h3>
+<p class="mt-2">
+  *This is a fully functional contact form, so please be kind and avoid
+  spamming. 😄
+</p>
+
+<form action="/send-message" method="POST" class="mt-4">
+  <div class="mb-3">
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      placeholder="Your Name"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      type="email"
+      class="form-control"
+      name="email"
+      placeholder="Your Email"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <textarea
+      class="form-control"
+      name="message"
+      placeholder="Your Message"
+      rows="5"
+      required
+    ></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+<% if (sent) { %>
+<div class="alert alert-success mt-3">
+  ✅ Your message has been sent successfully!
+</div>
+<% } %>
