@@ -7,8 +7,6 @@ import nodemailer from "nodemailer";
 import expressLayouts from "express-ejs-layouts";
 import dotenv from "dotenv";
 dotenv.config({ path: "./vlad.env" });
-console.log("GMAIL_USER:", process.env.GMAIL_USER);
-console.log("GMAIL_PASS:", process.env.GMAIL_PASS);
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
